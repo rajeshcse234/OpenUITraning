@@ -1,0 +1,27 @@
+if (typeof(SiebelAppFacade.AwaisSISAccountListAppletPM) === "undefined") {
+
+ SiebelJS.Namespace("SiebelAppFacade.AwaisSISAccountListAppletPM");
+ define("siebel/custom/AwaisSISAccountListAppletPM", ["siebel/listpmodel"],
+  function () {
+   SiebelAppFacade.AwaisSISAccountListAppletPM = (function () {
+
+    function AwaisSISAccountListAppletPM(pm) {
+     SiebelAppFacade.AwaisSISAccountListAppletPM.superclass.constructor.apply(this, arguments);
+    }
+
+    SiebelJS.Extend(AwaisSISAccountListAppletPM, SiebelAppFacade.ListPresentationModel);
+
+    AwaisSISAccountListAppletPM.prototype.Init = function () {
+     SiebelAppFacade.AwaisSISAccountListAppletPM.superclass.Init.apply(this, arguments);
+    }
+
+    AwaisSISAccountListAppletPM.prototype.Setup = function (propSet) {
+     SiebelAppFacade.AwaisSISAccountListAppletPM.superclass.Setup.apply(this, arguments);
+    }
+
+    return AwaisSISAccountListAppletPM;
+   }()
+  );
+  return "SiebelAppFacade.AwaisSISAccountListAppletPM";
+ })
+}
